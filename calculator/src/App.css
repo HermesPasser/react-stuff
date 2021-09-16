@@ -1,0 +1,40 @@
+ .calculator {
+   width: 360px;
+   height: 640x;
+   margin: auto;
+ }
+
+ .btn {
+   width: 90px;
+   height: 90px;
+   font-size: 50pt;
+   font-weight: 300;
+   border:  0.3px #a3a3a3 solid;
+   background-color: rgb(243, 243, 243);
+ }
+
+ .btn-2{
+   width:  180px;
+ }
+
+ 
+ .btn-3{
+  width:  270px;
+}
+
+.operation {
+  background-color: #8e8fa0;
+  color: rgb(77, 77, 77)
+}
+
+.dislay {
+  width: 360px;
+  height: 100px;
+  background-color: #a4a4a4;
+  color: white;
+  font-family: sans-sefif;
+  font-size: 50pt;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
