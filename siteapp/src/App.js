@@ -15,6 +15,8 @@ function App() {
   return (
     <div>
       <Router>
+		<Link to='/'>Home</Link>
+		<span> - </span>
 		<Link to='/users'>Users</Link>
 		<span> - </span>
 		<Link to='/about'>About</Link>

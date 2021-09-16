@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router'
+import './UserDetails.scss'
 
 const users = [
     {id: 1, name: 'Jhon Doe', desc: 'He does not exists'},
@@ -14,7 +15,7 @@ export default function UsersDetails(props) {
     return (
         <div className="details">
             <h1>{user.name}</h1>
-            <h1>{user.desc}</h1>
+            <p>{user.desc}</p>
         </div>
     )
 }
