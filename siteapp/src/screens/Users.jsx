@@ -7,12 +7,12 @@ export default function Users(props) {
             <h1>Users</h1>
             <ul>
                 <li>
-                    <Link to="/usrs/1/details">
+                    <Link to="/users/1/details">
                         Jhon Doe
                     </Link>
                 </li>
                 <li>
-                    <Link to="/usrs/2/details" >
+                    <Link to="/users/2/details" >
                         Mr Nobody
                     </Link>
                 </li>

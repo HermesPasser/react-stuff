@@ -9,6 +9,7 @@ import {
 	Route,
 	Link,
 } from 'react-router-dom'
+import Form from './screens/Form';
 
 function App() {
 
@@ -20,11 +21,14 @@ function App() {
 		<Link to='/users'>Users</Link>
 		<span> - </span>
 		<Link to='/about'>About</Link>
+		<span> - </span>
+		<Link to='/form'>Form</Link>
 		<Switch>
-			<Route exact path="/" component={Home} />
-			<Route path="/users" component={Users} />
 			<Route path="/users/:id/details" component={UsersDetails} />
+			<Route path="/users" component={Users} />
 			<Route path="/about" component={About} />
+			<Route path="/form" component={Form} />
+			<Route path="/" component={Home} />
 		</Switch>
       </Router>
     </div>
