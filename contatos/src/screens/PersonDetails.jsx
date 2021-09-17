@@ -8,8 +8,8 @@ export default function PersonDetails() {
     const {id: idStr} = useParams()
     const id = parseInt(idStr)
 
-    // const person = useSelector(state => state.filter(p => p.id === id))
-    const personaa = useSelector(state => state)[0]
+    const personaa = useSelector(state => state.filter(p => p.id === id))[0]
+    // const personaa = useSelector(state => state)[1]
     console.log('detalhes..', personaa)
     return (
         <Fragment>

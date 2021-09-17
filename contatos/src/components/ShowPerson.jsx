@@ -7,7 +7,7 @@ const ContactWrapper = styled.div`
     border-bottom: 1px #cecece solid;
 `
 
-export default function ShowPerson({name, id, contacts}, expanded) {
+export default function ShowPerson({name, id, contacts, expanded = false}) {
     console.log('showperson', name, id , contacts, expanded)
     const ShowDetailsElement = (
         <Paragraph>            
@@ -29,7 +29,7 @@ export default function ShowPerson({name, id, contacts}, expanded) {
         <ContactWrapper className="person">
             <SubTitle>{name}</SubTitle>
             <Paragraph><Strong>ID:</Strong> {id}</Paragraph>
-                {expanded ? ShowDetailsElement : ContactsElement}
+                { expanded ? ContactsElement : ShowDetailsElement}
         </ContactWrapper>
     )
 }

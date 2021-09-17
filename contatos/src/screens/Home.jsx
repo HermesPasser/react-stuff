@@ -9,7 +9,7 @@ export default function Home(props) {
         <Fragment>
             <Title>All our people</Title>
             {people.map(person => (
-                <ShowPerson {...person} />
+                <ShowPerson {...person} expanded={false} />
             ))}
         </Fragment>
     )
