@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { useSelector } from 'react-redux'
-import ShowPerson from '../components/ShowPerson'
+import ShowPerson from './ShowPerson'
 import {Title} from '../components/ui/typos'
 
 export default function Home(props) {

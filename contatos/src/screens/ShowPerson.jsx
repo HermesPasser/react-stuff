@@ -8,7 +8,6 @@ const ContactWrapper = styled.div`
 `
 
 export default function ShowPerson({name, id, contacts, expanded = false}) {
-    console.log('showperson', name, id , contacts, expanded)
     const ShowDetailsElement = (
         <Paragraph>            
             <Link to={`person/${id}/details`}>Show details</Link>

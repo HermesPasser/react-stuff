@@ -14,3 +14,10 @@ export const Label = styled.label`
     margin-right: 20px;
     color: #2f80ed;
 `
+export const Button = styled.button`
+    background: #2f80ed;
+    border: none;
+    color white;
+    padding: 1em;
+    border-radius: 2px;
+`

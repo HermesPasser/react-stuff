@@ -1,3 +1,6 @@
+import * as actions from './actions'
+
+let lastUsedPersonId = 2;
 const initialState = [
     {
         id: 1,
@@ -16,12 +19,12 @@ const initialState = [
         ]
     }
 ]
+export const getLastUsedPersonId = () => ++lastUsedPersonId//++PersonId.lastUsedId
 
 export default function reducer(state = initialState, action) {
-    switch (state) {
-        // case value:
-            
-    
+    switch (action.type) {
+        case actions.NEW_PERSON:
+            return [...state, action.person]
         default:
             return state;
     }
