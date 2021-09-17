@@ -1,8 +1,9 @@
 import { React, Fragment} from 'react'
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router'
-import ShowPerson from './ShowPerson'
+import { Link } from 'react-router-dom'
 import {Title} from '../components/ui/typos'
+import ShowPerson from './ShowPerson'
 
 export default function PersonDetails() {
     const {id: idStr} = useParams()
@@ -20,6 +21,7 @@ export default function PersonDetails() {
     return (
         <Fragment>
             <Title>Details</Title>
+            <Link to={`/person/${person.id}/edit`}>Edit</Link>
             <ShowPerson {...person} expanded={true} />
         </Fragment>
     )

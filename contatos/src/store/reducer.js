@@ -19,12 +19,21 @@ const initialState = [
         ]
     }
 ]
+
 export const getLastUsedPersonId = () => ++lastUsedPersonId//++PersonId.lastUsedId
 
 export default function reducer(state = initialState, action) {
     switch (action.type) {
         case actions.NEW_PERSON:
             return [...state, action.person]
+        case actions.UPDATE_PERSON:
+            const id = action.person.id
+            const index = state.findIndex(p => p.id === id)
+            if (index === -1)
+                return state
+
+            state[index] = action.person
+            return state
         default:
             return state;
     }
