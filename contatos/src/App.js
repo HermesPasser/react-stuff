@@ -13,13 +13,6 @@ import {
 	Link
 } from 'react-router-dom'
 
-{/* <ui>
-	<li><Link to="/">Home</Link></li>
-	<li><Link to="/search">Search</Link></li>
-	<li><Link to="/person/:id/edit">:edit</Link></li>
-	<li><Link to="/person/:id">:id</Link></li>
-	<li><Link to="/person/add">Add</Link></li>
-</ui> */}
 function App() {
 	return (
 		<Provider store={store}>
