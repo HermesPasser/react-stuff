@@ -44,9 +44,7 @@ export default function PersonAdd(props) {
     
     function save(e){
         e.preventDefault()
-        let p =newPerson(person)
-        console.log(p)
-        dispatch(p)
+        dispatch(newPerson(person))
         history.push("/")
     }
 
