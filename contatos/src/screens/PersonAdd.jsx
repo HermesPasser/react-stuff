@@ -54,8 +54,8 @@ export default function PersonAdd(props) {
         <Fragment>
             <Title>Add person</Title>
             <form>
-                <Label onChange={nameChanged}>Name: </Label>
-                <InputText></InputText>
+                <Label>Name: </Label>
+                <InputText onChange={nameChanged}></InputText>
                 {
                     person.contacts.map((contact, index) => (
                         <ContactForm {...contact} 
