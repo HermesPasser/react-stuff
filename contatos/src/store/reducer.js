@@ -31,9 +31,10 @@ export default function reducer(state = initialState, action) {
             const index = state.findIndex(p => p.id === id)
             if (index === -1)
                 return state
-
-            state[index] = action.person
-            return state
+            
+            let newState = [...state]
+            newState[index] = action.person
+            return newState
         default:
             return state;
     }
